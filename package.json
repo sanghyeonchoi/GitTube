@@ -2,7 +2,7 @@
   "name": "gittube",
   "version": "1.0.0",
   "description": "Cloning youtube with vannilla and nodejs",
-  "main": "index.js",
+  "main": "app.js",
   "author": "",
   "dependencies": {
     "@babel/core": "^7.13.8",

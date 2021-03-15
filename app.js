@@ -21,13 +21,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 app.use(localsMiddlewar);
-app.use(function (req, res, next) {
-  res.setHeader(
-    "Content-Security-Policy",
-    "script-src 'self' https://archive.org"
-  );
-  return next();
-});
 
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);
